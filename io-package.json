@@ -1,0 +1,94 @@
+{
+	"common": {
+		"name": "ah-mixer",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Allen & Heath Mixer",
+		"titleLang": {
+			"en": "Allen & Heath Mixer",
+			"de": "Allen & Heath Mixer",
+			"ru": "Allen & Heath Mixer",
+			"pt": "Allen & Heath Mixer",
+			"nl": "Allen & Heath Mixer",
+			"fr": "Mélangeur Allen & Heath",
+			"it": "Allen & Heath Mixer",
+			"es": "Mezclador Allen & Heath",
+			"pl": "Mikser Allen & Heath",
+			"zh-cn": "艾伦＆荒地搅拌机"
+		},
+		"desc": {
+			"en": "Control an Allen & Heath Digital Mixer",
+			"de": "Steuern Sie einen Allen & Heath Digital Mixer",
+			"ru": "Управление цифровым микшером Allen & Heath",
+			"pt": "Controlar um misturador digital Allen & Heath",
+			"nl": "Bedien een Allen & Heath digitale mixer",
+			"fr": "Contrôlez un mélangeur numérique Allen & Heath",
+			"it": "Controlla un mixer digitale Allen & Heath",
+			"es": "Controle un mezclador digital Allen & Heath",
+			"pl": "Steruj mikserem cyfrowym Allen & Heath",
+			"zh-cn": "控制Allen＆Heath数字混音器"
+		},
+		"authors": ["xDGeForcexD <info@xdgeforcexd.eu>"],
+		"keywords": ["allen heath", "sq", "mixer", "sound system"],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "ah-mixer.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/xDGeForcexD/ioBroker.ah-mixer/master/admin/ah-mixer.png",
+		"readme": "https://github.com/xDGeForcexD/ioBroker.ah-mixer/blob/master/README.md",
+		"loglevel": "info",
+		"restartAdapters": ["vis"],
+		"localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+		"mode": "daemon",
+		"type": "multimedia",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"materializeTab": true,
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "Allen & Heath Mixer",
+				"de": "Allen & Heath Mixer",
+				"ru": "Allen & Heath Mixer",
+				"pt": "Allen & Heath Mixer",
+				"nl": "Allen & Heath Mixer",
+				"fr": "Mélangeur Allen & Heath",
+				"it": "Allen & Heath Mixer",
+				"es": "Mezclador Allen & Heath",
+				"pl": "Mikser Allen & Heath",
+				"zh-cn": "艾伦＆荒地搅拌机"
+			},
+			"link": "",
+			"fa-icon": "info"
+		},
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			},
+			"vis"
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
