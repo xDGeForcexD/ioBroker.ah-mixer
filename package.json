@@ -19,7 +19,8 @@
     "url": "https://github.com/xDGeForcexD/ioBroker.ah-mixer"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.4.0"
+    "@iobroker/adapter-core": "^2.4.0",
+    "ah-mixer-remote": "^0.1.1"
   },
   "devDependencies": {
     "@iobroker/testing": "^2.2.0",
@@ -58,7 +59,8 @@
     "build": "npm run build:ts",
     "watch:ts": "tsc -p tsconfig.build.json --watch",
     "watch": "npm run watch:ts",
-    "test:ts": "mocha --opts test/mocha.custom.opts",
+    "test:js": "DEBUG=testing:* mocha src/**/*.test.js",
+    "test:ts": "DEBUG=testing:* mocha --require test/mocha.setup.js --watch-extensions ts --require ts-node/register --require source-map-support/register src/**/*.test.ts",
     "test:package": "mocha test/package --exit",
     "test:unit": "mocha test/unit --exit",
     "test:integration": "mocha test/integration --exit",
